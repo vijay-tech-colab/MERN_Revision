@@ -3,49 +3,51 @@
 <p>A professional MERN stack boilerplate for modern web development. This repository serves as a starting point for creating full-stack applications using MongoDB, Express.js, React.js, and Node.js.</p>
 
 <h2>Features</h2>
+<ul>
+<li>Scalable Folder Structure: Clean and organized structure for backend and frontend.</li>
 
-Scalable Folder Structure: Clean and organized structure for backend and frontend.
+<li>Authentication and Authorization: JWT-based user authentication.</li>
 
-Authentication and Authorization: JWT-based user authentication.
+<li>API Integration: RESTful API setup with Express.</li>
 
-API Integration: RESTful API setup with Express.
+<li>Frontend Routing: React Router DOM for client-side navigation.</li>
 
-Frontend Routing: React Router DOM for client-side navigation.
+<li>State Management: Optional Redux Toolkit for managing complex state.</li>
 
-State Management: Optional Redux Toolkit for managing complex state.
+<li>Styling: TailwindCSS or Bootstrap integration for responsive design.</li>
 
-Styling: TailwindCSS or Bootstrap integration for responsive design.
+<li>Environment Configurations: Easy management with dotenv.</li>
+</ul>
+<h2>Tech Stack</h2>
+<ul>
+<li>Frontend</li>
 
-Environment Configurations: Easy management with dotenv.
+<li>React.js</li>
 
-Tech Stack
+<li>React Router DOM</li>
 
-Frontend
+<li>Axios</li>
 
-React.js
+<li>TailwindCSS or Bootstrap </li>
 
-React Router DOM
+<li>Redux Toolkit </li>
+</ul>
+<h2>Backend</h2>
+<ul>
+<li>Node.js</li>
 
-Axios
+<li>Express.js</li>
 
-TailwindCSS or Bootstrap (optional)
+<li>Mongoose</li>
 
-Redux Toolkit (optional)
+<li>dotenv</li>
 
-Backend
+<li>bcrypt</li>
 
-Node.js
-
-Express.js
-
-Mongoose
-
-dotenv
-
-bcrypt
-
-jsonwebtoken
-
-Database
-
-MongoDB
+<li>jsonwebtoken</li>
+</ul>
+<h2>Database</h2>
+<ul>
+<li>MongoDB</li>
+<li>Mysql</li>
+</ul>

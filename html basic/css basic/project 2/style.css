@@ -1,0 +1,8 @@
+.box{
+    background-image: url('./mysql.png');
+    text-align: center;
+    text-transform: uppercase;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

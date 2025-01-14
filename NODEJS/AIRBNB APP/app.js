@@ -1,27 +1,21 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-app.use(express.urlencoded({extended : true}));
+const hostRouter = require('./routers/hostRouter');
+const storeRouter = require('./routers/storeRouter');
+const path = require('path');
+const rootDir = require('./utils/path-utils');
+app.use(express.json());
+app.use(express.urlencoded({extended : true}));  
+app.use(express.static(path.join(rootDir, 'public')));
 
-app.use((req, res, next) => {
-    console.log("Request received ",  req.url, req.method);
-    next();
-});
-app.get('/', (req, res) => {
+app.use(storeRouter);
+app.use(hostRouter);
 
-});  
+
+// 404 Not Found ?
 app.use((req,res,next) =>{
-    res.write(`<!DOCTYPE html>
-<html>
-<head>
-    <title>404 Not Found</title>
-</head>
-<body>
-    <h1>404 Not Found</h1>
-    <p>The page you are looking for does not exist.</p>
-</body>
-</html>`)
-
+    res.status(404).sendFile(path.join(rootDir, "views", "404.html"));
 });
 
 app.listen(port, () => {

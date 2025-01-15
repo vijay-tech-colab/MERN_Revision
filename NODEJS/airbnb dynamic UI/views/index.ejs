@@ -1,0 +1,43 @@
+<%- include('./partials/head') %> <!-- Include Head Partial -->
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <%- include('./partials/header') %> <!-- Include Header Partial -->
+    
+    <!-- Add Home Button -->
+    <section class="bg-gray-50 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <a href="/add-home" class="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white py-3 px-6 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300">
+                Add Your Home
+            </a>
+        </div>
+    </section>
+
+    <!-- Registered Homes Section -->
+    <main class="flex-grow">
+        <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <% if (homes && homes.length > 0) { %>
+                <% homes.forEach((home) => { %>
+                    <!-- Individual Home Card -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <!-- Placeholder for Image -->
+                        <div class="h-40 bg-gray-200 flex items-center justify-center">
+                            <span class="text-gray-400">Image</span>
+                        </div>
+                        <!-- Home Details -->
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2"><%= home.name %></h3>
+                            <p class="text-gray-600 mb-4">📍 Location: <%= home.location %></p>
+                            <p class="text-gray-500 text-sm">Description: <%= home.description || "No description provided." %></p>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p class="text-gray-600 text-lg col-span-full text-center mt-8">
+                    🏡 No homes registered yet. Be the first to add your beautiful space!
+                </p>
+            <% } %>
+        </div>
+    </main>
+
+<%- include('./partials/footer') %> <!-- Include Footer Partial -->
+<%- include('./partials/bottom') %> <!-- Include Bottom Partial -->
+

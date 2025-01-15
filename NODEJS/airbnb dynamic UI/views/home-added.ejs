@@ -1,0 +1,30 @@
+<%- include('./partials/head') %> <!-- Include Head Partial -->
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <%- include('./partials/header') %> <!-- Include Header Partial -->
+
+    <!-- Full-Page Centered Content -->
+    <div class="flex-grow flex flex-col items-center justify-center bg-gray-100">
+        <div class="bg-white p-12 rounded-lg shadow-2xl text-center max-w-lg w-full">
+            <!-- Success Icon -->
+            <div class="flex justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm4.293-9.707a1 1 0 10-1.414-1.414L9 10.586 7.121 8.707a1 1 0 10-1.414 1.414l2.586 2.586a1 1 0 001.414 0l4.586-4.586z" clip-rule="evenodd" />
+                </svg>
+            </div>
+
+            <!-- Success Message -->
+            <h1 class="text-3xl font-bold text-green-600 mb-4">Home Added Successfully!</h1>
+            <p class="text-gray-600 mb-6">
+                Thank you for adding your home. It's now listed on our platform and ready to host guests!
+            </p>
+
+            <!-- Navigation Button -->
+            <a href="/" class="inline-block bg-blue-500 text-white py-3 px-8 rounded-lg text-lg font-medium hover:bg-blue-600 transition duration-300">
+                Go to Home Page
+            </a>
+        </div>
+    </div>
+
+    <%- include('./partials/footer') %> <!-- Include Footer Partial -->
+</body>
+<%- include('./partials/bottom') %> <!-- Include Bottom Partial -->

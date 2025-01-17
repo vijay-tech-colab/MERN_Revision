@@ -1,0 +1,38 @@
+[
+  {
+    "price": "899",
+    "location": "vaaranasi",
+    "rating": "6",
+    "photoUrl": "/images/home.jpg"
+  },
+  {
+    "price": "7000",
+    "location": "vaaranasi",
+    "rating": "4",
+    "photoUrl": "images/home.jpg"
+  },
+  {
+    "price": "10000",
+    "location": "vaaranasi",
+    "rating": "2",
+    "photoUrl": "images/home.jpg"
+  },
+  {
+    "price": "899",
+    "location": "vaaranasi",
+    "rating": "6",
+    "photoUrl": "/images/home.jpg"
+  },
+  {
+    "price": "7000",
+    "location": "vaaranasi",
+    "rating": "4",
+    "photoUrl": "images/home.jpg"
+  },
+  {
+    "price": "10000",
+    "location": "vaaranasi",
+    "rating": "2",
+    "photoUrl": "images/home.jpg"
+  }
+]
